@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Dice Roller</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+    <h1>RPG Dice Roller</h1>
+
+    <label for="dice-types">Dice:</label>
+    <select name="dice-type" id="dice-type">
+        <option value="d4">d4</option>
+        <option value="d6">d6</option>
+        <option value="d8">d8</option>
+        <option value="d10">d10</option>
+        <option value="d12">d12</option>
+        <option value="d20">d20</option>
+    </select>
+
+    <label for="number-of-rolls">Number of Rolls:</label>
+    <input type="number" name="number-of-rolls" id="number-of-rolls" min=1 max=100 placeholder=1>
+    
+    <button type="button" id="roll-button" class="roll-button">Roll</button>
+
+    <h2>Result:</h2>
+    <p id="roll-result"> </p>
+
+    <script src="app.js"></script>
+</body>
+</html>
