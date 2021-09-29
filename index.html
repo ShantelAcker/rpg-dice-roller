@@ -9,24 +9,32 @@
 </head>
 <body>
     <h1>RPG Dice Roller</h1>
+    <main class="main-body">
+        
+        <div class="result-container">
+            <p id="roll-result" class="roll-result">1</p>
+        </div>
 
-    <label for="dice-types">Dice:</label>
-    <select name="dice-type" id="dice-type">
-        <option value="d4">d4</option>
-        <option value="d6">d6</option>
-        <option value="d8">d8</option>
-        <option value="d10">d10</option>
-        <option value="d12">d12</option>
-        <option value="d20">d20</option>
-    </select>
+        <div class="form-container">
+            <label for="dice-types" class="form-label dice-type-label">Dice Type:</label>
+            <select name="dice-type" id="dice-type" class="dice-type">
+                <option value="d4">d4</option>
+                <option value="d6">d6</option>
+                <option value="d8">d8</option>
+                <option value="d10">d10</option>
+                <option value="d12">d12</option>
+                <option value="d20" selected>d20</option>
+            </select>
 
-    <label for="number-of-rolls">Number of Rolls:</label>
-    <input type="number" name="number-of-rolls" id="number-of-rolls" min=1 max=100 placeholder=1>
-    
-    <button type="button" id="roll-button" class="roll-button">Roll</button>
+            <label for="number-of-rolls" class="form-label number-of-rolls-label">Number of Rolls:</label>
+            <input type="number" name="number-of-rolls" id="number-of-rolls" class="number-of-rolls" min=1 max=100 placeholder=1>
 
-    <h2>Result:</h2>
-    <p id="roll-result"> </p>
+            <button type="button" id="roll-button" class="roll-button">Roll</button>
+        </div>
+        
+        
+    </main>
+   
 
     <script src="app.js"></script>
 </body>

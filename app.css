@@ -2,6 +2,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
 
 /* universal styles */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto Mono', monospace;
+    /* background-color: rgb(62, 44, 65);
+    color: rgb(110, 133, 178); */
+}
+
+h1 {
+    text-align: center;
+}
+
+.main-body {
+    padding-bottom: 3em;
+    text-align: center;
+}
+
+.form-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;    
+}
+
+.form-label {
+    font-size: 1.5em;
+}
+
+.dice-type {
+    margin-top: 1.5em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.number-of-rolls-label {
+    margin-top: 1.1em;
+}
+
+.number-of-rolls {
+    margin-top: 1.5em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.result-container {
+    text-align: center;
+}
+
+.roll-result {
+    font-size: 2em;
+}
+
+.roll-button {
+    margin-top: 3em;
+    font-size: 1.5em;
+    padding: .3em 0;
+    border-radius: 10px;
 }
